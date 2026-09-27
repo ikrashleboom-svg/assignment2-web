@@ -1,0 +1,108 @@
+/* =========================================================
+   reset.css — global reset + shared variables
+   Included on every page of the project
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* padding and border are now included in width/height */
+}
+
+:root {
+  --color-bg: #14171c;
+  --color-surface: #1c2129;
+  --color-surface-alt: #232a33;
+  --color-text: #eef1f5;
+  --color-text-muted: #9aa4b2;
+  --color-accent: #ffb454;   /* warm amber accent */
+  --color-accent-2: #5ec9c1; /* cool teal accent for secondary details */
+  --color-border: #2c333d;
+
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", "Segoe UI", sans-serif;
+
+  --radius-s: 6px;
+  --radius-m: 14px;
+  --max-width: 1180px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+/* Small nav bar for switching between the demo pages —
+   not part of the assignment tasks themselves, just for convenience */
+.demo-switcher {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 14px 24px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 14px;
+}
+
+.demo-switcher a {
+  padding: 6px 12px;
+  border-radius: var(--radius-s);
+  color: var(--color-text-muted);
+}
+
+.demo-switcher a.active,
+.demo-switcher a:hover {
+  background: var(--color-surface-alt);
+  color: var(--color-accent);
+}
+
+.page-title {
+  padding: 48px 24px 8px;
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.page-title h1 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 600;
+}
+
+.page-title p {
+  color: var(--color-text-muted);
+  margin-top: 6px;
+  max-width: 60ch;
+}

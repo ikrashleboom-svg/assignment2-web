@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 4 — Portfolio Page | Flexbox + Grid</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/part3-portfolio.css">
+</head>
+<body>
+
+  <nav class="demo-switcher">
+    <a href="index.html">← All tasks</a>
+    <a href="part1-navbar.html">Task 0: Navbar</a>
+    <a href="part1-cards.html">Task 1: Cards</a>
+    <a href="part2-grid-layout.html">Task 2: Grid Layout</a>
+    <a href="part2-gallery.html">Task 3: Gallery</a>
+    <a href="part3-portfolio.html" class="active">Task 4: Portfolio</a>
+  </nav>
+
+  <div class="page-title">
+    <h1>Task 4. Portfolio Page</h1>
+    <p>Header built with Flexbox, main section built with Grid (projects on the left / sidebar on the right), Flexbox again inside each card, footer spans the full width.</p>
+  </div>
+
+  <div class="portfolio">
+
+    <header class="portfolio__header">
+      <nav class="portfolio__nav">
+        <a href="#" style="font-family:var(--font-display); font-weight:600; font-size:19px;">Aliya Yerzhanova</a>
+        <ul class="portfolio__nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="portfolio__hero">
+      <h1>Frontend developer who loves clean, tidy interfaces</h1>
+      <p>I build responsive websites with HTML, CSS and JavaScript. A few recent student projects are below.</p>
+    </section>
+
+    <main class="portfolio__main" id="work">
+
+      <div class="portfolio__projects">
+
+        <article class="project-card">
+          <span class="project-card__tag">Flexbox</span>
+          <h3 class="project-card__title">Coding School Landing Page</h3>
+          <p class="project-card__text">Responsive navigation and a row of course cards.</p>
+          <div class="project-card__footer">
+            <span class="project-card__link">View code →</span>
+            <span style="color:var(--color-text-muted); font-size:13px;">HTML · CSS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-card__tag">Grid</span>
+          <h3 class="project-card__title">Admin Panel with a Sidebar</h3>
+          <p class="project-card__text">Page layout built with grid-template-areas.</p>
+          <div class="project-card__footer">
+            <span class="project-card__link">View code →</span>
+            <span style="color:var(--color-text-muted); font-size:13px;">HTML · CSS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-card__tag">Grid</span>
+          <h3 class="project-card__title">Landscape Gallery</h3>
+          <p class="project-card__text">A grid of 10 photos with captions on hover.</p>
+          <div class="project-card__footer">
+            <span class="project-card__link">View code →</span>
+            <span style="color:var(--color-text-muted); font-size:13px;">HTML · CSS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-card__tag">Flexbox + Grid</span>
+          <h3 class="project-card__title">This Very Portfolio Page</h3>
+          <p class="project-card__text">Both technologies combined in one layout.</p>
+          <div class="project-card__footer">
+            <span class="project-card__link">View code →</span>
+            <span style="color:var(--color-text-muted); font-size:13px;">HTML · CSS</span>
+          </div>
+        </article>
+
+      </div>
+
+      <aside class="portfolio__aside" id="about">
+        <div>
+          <h3>About Me</h3>
+          <p style="margin-top:8px; color:var(--color-text-muted); font-size:14px;">
+            2nd-year student, Information Systems major. Currently learning frontend development.
+          </p>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <div class="skills">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Flexbox</span>
+            <span>Grid</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+          </div>
+        </div>
+        <a href="#contact" class="cta">Get in Touch</a>
+      </aside>
+
+    </main>
+
+    <footer class="portfolio__footer" id="contact">
+      © 2026 Azimbek Amandykov — built for Assignment #2 (Flexbox &amp; Grid)
+    </footer>
+
+  </div>
+
+</body>
+</html>

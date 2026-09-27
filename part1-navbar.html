@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 0 — Navigation Bar | Flexbox</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/part1-navbar.css">
+</head>
+<body>
+
+  <nav class="demo-switcher">
+    <a href="index.html">← All tasks</a>
+    <a href="part1-navbar.html" class="active">Task 0: Navbar</a>
+    <a href="part1-cards.html">Task 1: Cards</a>
+    <a href="part2-grid-layout.html">Task 2: Grid Layout</a>
+    <a href="part2-gallery.html">Task 3: Gallery</a>
+    <a href="part3-portfolio.html">Task 4: Portfolio</a>
+  </nav>
+
+  <div class="page-title">
+    <h1>Task 0. Navigation Bar</h1>
+    <p>Logo on the left, links on the right, everything vertically aligned — using <code>display: flex</code> and <code>justify-content: space-between</code>.</p>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="navbar__logo">code<span>craft</span></a>
+
+      <ul class="navbar__links">
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="navbar__cta">Sign In</a></li>
+      </ul>
+
+      <button class="navbar__burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <p class="navbar-demo-note">
+    Shrink the browser window below 640px — the links will hide and a burger
+    icon will appear (done with <code>@media</code> and <code>display: none/flex</code>).
+  </p>
+
+</body>
+</html>

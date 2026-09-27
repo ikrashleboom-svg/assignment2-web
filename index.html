@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment #2 — Advanced CSS (Flexbox & Grid)</title>
+<link rel="stylesheet" href="css/reset.css">
+<style>
+  .hub {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 80px 24px;
+  }
+  .hub h1 {
+    font-family: var(--font-display);
+    font-size: clamp(30px, 5vw, 44px);
+  }
+  .hub p.lead {
+    color: var(--color-text-muted);
+    margin-top: 12px;
+    max-width: 60ch;
+  }
+  .hub-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .hub-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-m);
+    padding: 18px 22px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+  .hub-list a:hover {
+    border-color: var(--color-accent);
+    transform: translateX(4px);
+  }
+  .hub-list .task-name {
+    font-weight: 600;
+  }
+  .hub-list .task-part {
+    color: var(--color-text-muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="hub">
+    <h1>Advanced CSS: Flexbox &amp; Grid</h1>
+    <p class="lead">
+      Demo project for Assignment #2. Each link below opens a separate task
+      with working code and comments inside the CSS files.
+    </p>
+
+    <div class="hub-list">
+      <a href="part1-navbar.html">
+        <span>
+          <div class="task-name">Task 0 — Navigation Bar</div>
+          <div class="task-part">Part 1. Flexbox</div>
+        </span>
+        <span>→</span>
+      </a>
+      <a href="part1-cards.html">
+        <span>
+          <div class="task-name">Task 1 — Card Row</div>
+          <div class="task-part">Part 1. Flexbox</div>
+        </span>
+        <span>→</span>
+      </a>
+      <a href="part2-grid-layout.html">
+        <span>
+          <div class="task-name">Task 2 — Page Layout with Grid Areas</div>
+          <div class="task-part">Part 2. Grid System</div>
+        </span>
+        <span>→</span>
+      </a>
+      <a href="part2-gallery.html">
+        <span>
+          <div class="task-name">Task 3 — Image Gallery</div>
+          <div class="task-part">Part 2. Grid System</div>
+        </span>
+        <span>→</span>
+      </a>
+      <a href="part3-portfolio.html">
+        <span>
+          <div class="task-name">Task 4 — Portfolio Page</div>
+          <div class="task-part">Part 3. Combining Flexbox &amp; Grid</div>
+        </span>
+        <span>→</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>

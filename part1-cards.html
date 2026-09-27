@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 1 — Card Row | Flexbox</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/part1-navbar.css">
+<link rel="stylesheet" href="css/part1-cards.css">
+</head>
+<body>
+
+  <nav class="demo-switcher">
+    <a href="index.html">← All tasks</a>
+    <a href="part1-navbar.html">Task 0: Navbar</a>
+    <a href="part1-cards.html" class="active">Task 1: Cards</a>
+    <a href="part2-grid-layout.html">Task 2: Grid Layout</a>
+    <a href="part2-gallery.html">Task 3: Gallery</a>
+    <a href="part3-portfolio.html">Task 4: Portfolio</a>
+  </nav>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#" class="navbar__logo">code<span>craft</span></a>
+      <ul class="navbar__links">
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" class="navbar__cta">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-title">
+    <h1>Task 1. Card Row</h1>
+    <p>Three or more cards in a row, equal height, even spacing, and a hover effect — using <code>display: flex</code>, <code>flex-wrap</code> and <code>gap</code>.</p>
+  </div>
+
+  <section class="card-row">
+
+    <article class="card">
+      <img class="card__image" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="JavaScript course">
+      <div class="card__body">
+        <h3 class="card__title">JavaScript from Scratch</h3>
+        <p class="card__text">Language basics, the DOM, asynchronous code, and your first interactive projects.</p>
+        <button class="card__btn">Learn more</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card__image" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80" alt="CSS course">
+      <div class="card__body">
+        <h3 class="card__title">CSS Flexbox &amp; Grid</h3>
+        <p class="card__text">Build responsive layouts without float and without any external framework.</p>
+        <button class="card__btn">Learn more</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card__image" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="React course">
+      <div class="card__body">
+        <h3 class="card__title">React for Beginners</h3>
+        <p class="card__text">Components, state management, and building a full single-page application.</p>
+        <button class="card__btn">Learn more</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <img class="card__image" src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&q=80" alt="Git course">
+      <div class="card__body">
+        <h3 class="card__title">Git &amp; GitHub</h3>
+        <p class="card__text">Version control, branching, pull requests, and working as part of a team.</p>
+        <button class="card__btn">Learn more</button>
+      </div>
+    </article>
+
+  </section>
+
+</body>
+</html>
